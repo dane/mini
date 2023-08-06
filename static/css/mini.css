@@ -1,0 +1,192 @@
+/* Hack font */
+@import url('/fonts/hack/hack.css');
+
+/* Body, header, and footer */
+
+html, body, h1, h2, h3, h4, h5, div, ul, ol, li, p,  blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: ui-sans-serif, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background: rgb(255, 255, 255);
+  color: rgb(69, 65, 81);
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+#site-title {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 4rem 0;
+}
+
+#site-title a:link,
+#site-title a:visited {
+  color: rgb(112, 111, 142);
+}
+
+#site-section,
+#article-title,
+article h2 {
+  line-height: 2rem;
+  color: rgb(43, 36, 96);
+}
+
+header > h2,
+#article-title {
+  font-size: 2rem;
+}
+
+footer {
+  color: rgb(131, 129, 137);
+  padding: 4rem 2rem;
+}
+
+footer p {
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+}
+
+footer ul {
+  float: right;
+  width: 20%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 0 1rem 1rem;
+}
+
+footer svg {
+  height: 2rem;
+  width: 2rem;
+  fill: rgb(113, 97, 239);
+  opacity: 0.5;
+}
+
+footer a:hover svg,
+footer a:visited svg {
+  opacity: 1.0; 
+}
+
+/* Monospace elements */
+
+time, code, .mono {
+  font-family: monospace, "Hack";
+  font-weight: normal;
+}
+
+/* Content */
+
+time, .mono {
+  color: rgb(173, 169, 186);
+}
+
+ol time {
+  margin-right: 1rem;
+}
+
+p, pre {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(166, 67, 253);
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+#article-title {
+  margin: 1.5rem 0;
+}
+
+article h2 {
+  margin: 2rem 0 1.5rem;
+}
+
+body > div {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 43rem;
+}
+
+article header {
+  display: block;
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+
+#article-list li {
+  list-style: none;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+/* Code blocks */
+
+code {
+  background: rgb(248, 248, 251);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.25rem;
+  font-size: 0.9rem;
+  color: rgb(34, 30, 46);
+}
+
+pre code {
+  display: block;
+  padding: 0.5rem 1rem;
+  line-height: 1rem;
+  overflow: auto;
+}
+
+#avatar {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+#avatar img {
+    display: block;
+    height: 150%;
+    width: 150%;
+    top: -5rem;
+}
+
+/* Code comments */
+.c1 {
+  color: rgb(130, 127, 137);
+}
+
+/* Dark-mode colors */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #22222E;
+    background: rgb(34, 34, 46);
+    color: rgb(220, 220, 220);
+  }
+
+  #site-section,
+  #article-title,
+  article h2 {
+    color: rgb(255, 255, 255);
+  }
+
+  code {
+    background: rgba(13, 13, 28);
+    color: rgb(233, 233, 233);
+  }
+}

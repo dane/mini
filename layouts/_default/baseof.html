@@ -1,0 +1,20 @@
+{{- $site := absURL "" }}
+{{- $url := urls.Parse site.BaseURL }}
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  {{ partial "head.html" }}
+  <body>
+    <div>
+      <header>
+        <h1 id="site-title"><a href="/">{{ $url.Hostname }}</a></h1>
+        {{- if or .IsHome .IsSection }}
+        <h2 id="site-section">Blog</h2>
+        {{- end }}
+      </header>
+      <main>
+        {{- block "main" . }}
+        {{- end }}
+      </main>
+    </div>
+  </body>
+</html>

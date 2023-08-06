@@ -1,0 +1,9 @@
+---
+markup:
+  highlight:
+    noClasses: false
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss+xml"
+    baseName: "feed"
