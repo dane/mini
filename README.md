@@ -1,6 +1,6 @@
 # mini 
 
-Version: 0.0.1
+Version: 0.0.2
 Demo: [daneharrigan.com](https://daneharrigan.com)
 
 A minimal Hugo blog theme that is responsive with a touch of purple. 

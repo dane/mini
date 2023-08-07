@@ -3,6 +3,17 @@
 {{- $title = printf "%s &mdash; %s" page.Title site.Title }}
 {{- end }}
 <head itemscope itemtype="https://schema.org/WebPage">
+  {{- if (isset site.Params "gtag" )}}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.Gtag }}"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.Params.Gtag }}');
+  </script>
+  {{- end }}
   <meta charset="utf-8" />
   <!-- links -->
   {{- if (isset site.Params "mastodon") }}
