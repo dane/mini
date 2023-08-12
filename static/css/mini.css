@@ -1,4 +1,5 @@
 /* Hack font */
+
 @import url('/fonts/hack/hack.css');
 
 /* Body, header, and footer */
@@ -166,8 +167,22 @@ pre code {
 }
 
 /* Code comments */
+
 .c1 {
   color: rgb(130, 127, 137);
+}
+
+/* Mobile sizing */
+
+@media (max-width: 600px) {
+  #article-list time {
+    display: block;
+  } 
+
+  #article-list li {
+    line-height: 2rem;
+    padding: 0.5rem 0 1rem;
+  }
 }
 
 /* Dark-mode colors */
