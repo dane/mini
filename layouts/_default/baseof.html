@@ -2,7 +2,7 @@
 {{- $url := urls.Parse site.BaseURL }}
 <!doctype html>
 <html lang="{{ site.Language.Lang }}">
-  {{ partial "head.html" }}
+  {{ partial "head.html" . }}
   <body>
     <div>
       <header>
